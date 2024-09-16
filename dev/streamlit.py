@@ -2,6 +2,10 @@ import streamlit as st
 from streamlit_ace import st_ace
 import streamlit_mermaid as stmd
 
+import os
+os.mkdir("./brightway-data/")
+os.environ["BRIGHTWAY2_DIR"] = "./brightway-data/"
+
 st.title('Hello, Streamlit!')
 
 # mermaid_chart ="""
