@@ -11,6 +11,11 @@ dependencies:
   - dynamic_characterization
   - matplotlib
   - seaborn
+  - pip
+  - pip:
+    - streamlit-mermaid
+    - streamlit-ace
+    - bokeh
   # - brightway25_nosolver # for macOS ARM machine
   # - scikit-umfpack # for macOS ARM machine
   # - numpy==1.24 # for macOS ARM machine

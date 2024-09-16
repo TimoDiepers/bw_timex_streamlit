@@ -1373,4 +1373,5 @@ class TimexLCA:
         handles, labels = axes.get_legend_handles_labels()
         axes.legend(handles[::-1], labels[::-1])
         plt.grid(True)
-        plt.show()
+        
+        return plt
