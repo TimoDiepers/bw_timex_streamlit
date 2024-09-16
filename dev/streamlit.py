@@ -3,7 +3,9 @@ from streamlit_ace import st_ace
 import streamlit_mermaid as stmd
 
 import os
-os.mkdir("./brightway-data/")
+
+if not os.path.exists("./brightway-data/"):
+    os.mkdir("./brightway-data/")
 os.environ["BRIGHTWAY2_DIR"] = "./brightway-data/"
 
 st.title('Hello, Streamlit!')
